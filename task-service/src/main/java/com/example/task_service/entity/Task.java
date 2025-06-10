@@ -1,4 +1,4 @@
-package com.example.task_service.entity;
+package com.martins.apigerentask.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -6,14 +6,13 @@ import lombok.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
-@Entity(name = "tasks")
-@Table (name = "tasks")
+@Entity
+@Table(name = "tasks")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-
 public class Task {
 
     @Id
